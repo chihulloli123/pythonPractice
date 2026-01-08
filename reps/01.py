@@ -314,3 +314,94 @@
 #thislist.extend(tropical)
 #print(thislist)
 
+
+#thislist = ["apple", "banana", "cherry"]
+#thistuple = ("kiwi", "orange")
+#thislist.extend(thistuple)
+#print(thislist)
+
+#thislist = ["apple", "banana", "cherry"]
+#thislist.remove("banana")
+#print(thislist)
+
+#messages = ["classified", "routine", "classified", "urgent"]
+#messages.remove("classified")
+#print(messages)
+
+# Simulated incoming intelligence message queue
+#message_queue = [
+#    "routine: system check",
+#    "classified: troop movement",
+#    "classified: nuclear site activity",
+#    "urgent: UAV down",
+#    "routine: supply drop successful",
+#    "classified: intercepted transmission"
+#]
+
+# Analyst confirms first 'classified' message already processed
+#print("Original Queue:")
+#print(message_queue)
+
+# Remove the first classified message (already handled)
+#for message in message_queue:
+#    if "classified" in message:
+#        message_queue.remove(message)
+#        break  # Only remove the first match
+
+#print("\nUpdated Queue (after removing first processed classified message):")
+#print(message_queue)
+
+# Count how many classified messages still remain
+#classified_count = sum(1 for msg in message_queue if "classified" in msg)
+#print(f"\nClassified messages still pending: {classified_count}")
+
+# Simulate promoting the urgent message to the top of the queue
+#urgent_msg = None
+#for msg in message_queue:
+#    if "urgent" in msg:
+#        urgent_msg = msg
+#        message_queue.remove(msg)
+#        break
+#if urgent_msg:
+#    message_queue.insert(0, urgent_msg)
+
+#print("\nQueue after promoting urgent message:")
+#print(message_queue)
+intel_queue = [
+    "classified: troop movement",
+    "routine: supply report",
+    "urgent: cyber breach",
+    "classified: missile test",
+    "routine: weather update",
+    "classified: border drone footage"
+]
+
+# Step 1: Remove the first 'classified' message (processed by analyst)
+for msg in intel_queue:
+    if "classified" in msg:
+        intel_queue.remove(msg)
+        break
+
+# Step 2: Promote all 'urgent' messages to the front
+urgent_messages = [msg for msg in intel_queue if "urgent" in msg]
+for msg in urgent_messages:
+    intel_queue.remove(msg)
+intel_queue = urgent_messages + intel_queue
+
+# Step 3: Add new incoming message
+intel_queue.append("classified: intercepted communication")
+
+# Step 4: Count messages by category
+classified_count = sum("classified" in msg for msg in intel_queue)
+urgent_count = sum("urgent" in msg for msg in intel_queue)
+routine_count = sum("routine" in msg for msg in intel_queue)
+
+# Display mission-ready intel queue
+print("\n📡 Current Intel Queue:")
+for i, msg in enumerate(intel_queue, 1):
+    print(f"{i}. {msg}")
+
+# Display categorized counts
+print(f"\n🔒 Classified: {classified_count}")
+print(f"⚠️ Urgent: {urgent_count}")
+print(f"📘 Routine: {routine_count}")
