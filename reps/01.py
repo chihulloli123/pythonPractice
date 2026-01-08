@@ -367,41 +367,90 @@
 
 #print("\nQueue after promoting urgent message:")
 #print(message_queue)
-intel_queue = [
-    "classified: troop movement",
-    "routine: supply report",
-    "urgent: cyber breach",
-    "classified: missile test",
-    "routine: weather update",
-    "classified: border drone footage"
-]
+#intel_queue = [
+#    "classified: troop movement",
+#    "routine: supply report",
+#    "urgent: cyber breach",
+#    "classified: missile test",
+#    "routine: weather update",
+#    "classified: border drone footage"
+#]
 
 # Step 1: Remove the first 'classified' message (processed by analyst)
-for msg in intel_queue:
-    if "classified" in msg:
-        intel_queue.remove(msg)
-        break
+#for msg in intel_queue:
+#    if "classified" in msg:
+#        intel_queue.remove(msg)
+#        break
 
 # Step 2: Promote all 'urgent' messages to the front
-urgent_messages = [msg for msg in intel_queue if "urgent" in msg]
-for msg in urgent_messages:
-    intel_queue.remove(msg)
-intel_queue = urgent_messages + intel_queue
+#urgent_messages = [msg for msg in intel_queue if "urgent" in msg]
+#for msg in urgent_messages:
+#    intel_queue.remove(msg)
+#intel_queue = urgent_messages + intel_queue
 
 # Step 3: Add new incoming message
-intel_queue.append("classified: intercepted communication")
+#intel_queue.append("classified: intercepted communication")
 
 # Step 4: Count messages by category
-classified_count = sum("classified" in msg for msg in intel_queue)
-urgent_count = sum("urgent" in msg for msg in intel_queue)
-routine_count = sum("routine" in msg for msg in intel_queue)
+#classified_count = sum("classified" in msg for msg in intel_queue)
+#urgent_count = sum("urgent" in msg for msg in intel_queue)
+#routine_count = sum("routine" in msg for msg in intel_queue)
 
 # Display mission-ready intel queue
-print("\n📡 Current Intel Queue:")
-for i, msg in enumerate(intel_queue, 1):
-    print(f"{i}. {msg}")
+#print("\n📡 Current Intel Queue:")
+#for i, msg in enumerate(intel_queue, 1):
+#    print(f"{i}. {msg}")
 
 # Display categorized counts
-print(f"\n🔒 Classified: {classified_count}")
-print(f"⚠️ Urgent: {urgent_count}")
-print(f"📘 Routine: {routine_count}")
+#print(f"\n🔒 Classified: {classified_count}")
+#print(f"⚠️ Urgent: {urgent_count}")
+#print(f"📘 Routine: {routine_count}")
+
+#thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+#thislist.remove("banana")
+#print(thislist)
+
+#thislist = ["apple", "banana", "cherry"]
+#thislist.pop()
+#print(thislist)
+
+#thislist = ["apple", "banana", "cherry"]
+#del thislist[0]
+#print(thislist)
+
+#thislist = ["apple", "banana", "cherry"]
+#del thislist
+
+#thislist = ["apple", "banana", "cherry"]
+#thislist.clear()
+#print(thislist)
+
+#thislist = ["apple", "banana", "cherry"]
+#for x in thislist:
+#  print(x)
+
+#thislist = ["apple", "banana", "cherry"]
+#for i in range(len(thislist)):
+#  print(thislist[i])
+
+#intel_feed = [
+#"SIGINT: comms intercept", 
+#"HUMINT: troop movement", 
+#"IMINIT: satellite scan"
+#]
+#packet_index = 0
+
+#while packet_index < len(intel_feed):
+#  print(intel_feed[packet_index])
+#  packet_index += 1
+
+#  def log_event(packet):
+#    print(f"Processing packet: {packet}")
+
+#intel_feed = ["SIGINT: comms intercept", "HUMINT: troop movement", "IMINT: satellite scan"]
+#packet_index = 0
+
+#while packet_index < len(intel_feed):
+#    log_event(intel_feed[packet_index])
+#    packet_index += 1
+
