@@ -402,9 +402,9 @@
 #    print(f"{i}. {msg}")
 
 # Display categorized counts
-#print(f"\n🔒 Classified: {classified_count}")
-#print(f"⚠️ Urgent: {urgent_count}")
-#print(f"📘 Routine: {routine_count}")
+#print(f"\n Classified: {classified_count}")
+#print(f" Urgent: {urgent_count}")
+#print(f" Routine: {routine_count}")
 
 #thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
 #thislist.remove("banana")
@@ -453,4 +453,482 @@
 #while packet_index < len(intel_feed):
 #    log_event(intel_feed[packet_index])
 #    packet_index += 1
+
+#thislist = ["apple", "banana", "cherry"]
+#i = 0
+#while i < len(thislist):
+#  print(thislist[i])
+#  i = i + 1
+
+#thislist = ["apple", "banana", "cherry"]
+#[print(x) for x in thislist]
+
+#intel_stream = [
+#  "HUMINT: base chatter",
+#  "SIGINT: encrypted message",
+#  "IMINT: drone scan",
+#  "OSINT: forum post",
+#  "HUMINT: captured audio",
+#  "SOCINT: behavior pattern"
+#]
+
+#flagged_signals = []
+#filter for any signals containing the term "HUMINT" (Human Intelligence)
+#for signal in intel_stream:
+#  if "HUMINT" in signal:
+#    flagged_signals.append(signal)
+
+#print("Flagged Signals for Review:")
+#print(flagged_signals)
+
+#ntel_stream = [
+ #   "HUMINT: base chatter",
+ #   "SIGINT: encrypted message",
+ #   "IMINT: drone scan",
+ #   "OSINT: forum post",
+ #   "HUMINT: captured audio",
+ #   "SOCINT: behavior pattern"
+#]
+
+# Pull only signals involving HUMINT
+#humint_signals = [signal for signal in intel_stream if "HUMINT" in signal]
+
+#print("HUMINT Signals for Analyst Review:")
+#print(humint_signals)
+
+#intel_sources = ["SIGINT", "HUMINT", "IMINT", "OSINT", "MASINT"]
+#intel_sources.sort()
+#print(intel_sources)
+
+#threat_levels = [3, 5, 1, 4, 2]
+#threat_levels.sort()
+#print(threat_levels)
+
+#target_priority = [82, 99, 30, 45, 71]
+#target_priority.sort(reverse=True)
+#print(target_priority)
+
+#def myfunc(n):
+#  return abs(n-50)
+
+#thislist = [100, 50, 65, 82, 23]
+#thislist.sort(key=myfunc)
+#print(thislist)
+
+#thislist = ["banana", "Orange", "Kiwi", "cherry"]
+#thislist.sort()
+#print(thislist)
+
+#thislist = ["banana", "Orange", "Kiwi", "cherry"]
+#thislist.sort(key = str.lower)
+#print(thislist)
+
+#thislist = ["banana", "Orange", "Kiwi", "cherry"]
+#thislist.reverse()
+#print(thislist)
+
+#thislist = ["apple", "banana", "cherry"]
+#mylist = thislist.copy()
+#print(mylist)
+
+#thislist = ["apple", "banana", "cherry"]
+#mylist = list(thislist)
+#print(mylist)
+
+#thislist = ["apple", "banana", "cherry"]
+#mylist = thislist[:]
+#print(mylist)
+
+#list1 = ["a", "b", "c"]
+#list2 = [1, 2, 3]
+
+#list3 = list1 + list2
+#print(list3)
+
+#list1 = ["a", "b", "c"]
+#list2 = [1, 2, 3]
+
+#for x in list2:
+#  list1.append(x)
+
+#print(list1)
+
+#list1 = ["a", "b", "c"]
+#list2 = [1, 2, 3]
+
+#list1.extend(list2)
+#print(list1)
+
+#thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+#print(thistuple)
+
+#thistuple = ("apple", "banana", "cherry")
+#print(len(thistuple))
+
+#to create a tuple with only one item, you have to add a comma after the item, otherwise Python wil
+#not recognize it as a tuple..
+#thistuple = ("apple",)
+#print(len(thistuple))
+
+#tuple1 = ("apple", "banana", "cherry")
+#tuple2 = (1, 5, 7, 9, 3)
+#tuple3 = (True, False, True)
+
+#print(type(tuple1))
+#print(type(tuple2))
+#print(type(tuple3))
+
+#records = [
+#    (100234, "IT", True),
+#    (100235, "HR", False),
+#    (100236, "IT", True),
+#    (100237, "Finance", True),
+#    (100238, "HR", True),
+#]
+
+#def count_active_by_department(records):
+#    result = {}
+
+#    for emp_id, department, is_active in records:
+#        if is_active:
+#            if department not in result:
+#                result[department] = 0
+#            result[department] += 1
+
+#    return result
+
+#output = count_active_by_department(records)
+#print(output)
+
+#thistuple=("apple", "banana", "cherry")
+#print(thistuple[1])
+
+#thistuple=("apple", "banana", "cherry")
+#print(thistuple[-1])
+
+#thistuple=("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+#print(thistuple[2:5])
+
+#thistuple=("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+#print(thistuple[:4])
+
+#thistuple=("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+#print(thistuple[2:])
+
+#thistuple=("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+#print(thistuple[-4:-1])
+
+#thistuple=("apple", "banana", "cherry")
+#if "apple" in thistuple:
+#  print("yes, 'apple' is in the fruits tuple")
+
+#onboarding_steps = ("Account Setup", "Orientation", "Security Briefing")
+#steps_list = list(onboarding_steps)
+
+#for i in range(len(steps_list)):
+#  if steps_list[i] == "Orientation":
+#    steps_list[i] = "Intro"
+
+#onboarding_steps = tuple(steps_list)
+
+#print(onboarding_steps)
+
+# Immutable original data (e.g., coming from Foundry pipeline or upstream model)
+#departments = ("Homeland Security", "Department of Defense", "Cyber Command")
+
+# Step 1: Convert tuple to list to make changes
+#editable_departments = list(departments)
+
+# Step 2: Apply rename
+#for i in range(len(editable_departments)):
+#    if editable_departments[i] == "Department of Defense":
+#        editable_departments[i] = "Department of War"
+
+# Step 3: Freeze it again to avoid accidental mutation later
+#departments = tuple(editable_departments)
+
+# Final result
+#print(departments)
+
+#thistuple = ("apple", "banana", "cherry")
+#y = list(thistuple)
+#y.append("orange")
+#thistuple = tuple(y)
+#print(thistuple)
+
+#thistuple = ("apple", "banana", "cherry")
+#y = list(thistuple)
+#y.remove("apple")
+#thistuple = tuple(y)
+#print(thistuple)
+
+#fruits = ("apple", "banana", "cherry")
+
+#(green, yellow, red) = fruits
+
+#print(green)
+#print(yellow)
+#print(red)
+
+#def escalate_alerts(alert_id, category_):
+#  print(f"Escalating {alert_id}: {category}")
+  
+
+
+#alert = (3862, "2026-01-08T09:15z", "System Breach", "High")
+
+#id, timestamp, category, severity = alert
+#if severity == "High":
+#  escalate_alerts(id, category)
+
+#fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+#(green, yellow, *red) = fruits
+
+#print(green)
+#print(yellow)
+#print(red)
+
+#fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+#(green, *tropic, red) = fruits
+#print(green)
+#print(tropic)
+#print(red)
+
+#thistuple = ("apple", "banana", "cherry")
+#for x in thistuple: 
+#  print(x) 
+
+#a = 33 
+#b = 200
+#if b > a:
+#  print("b is greater than a")
+
+#number = 15
+#if number > 0:
+#  print("The number is positive")
+#age = 20
+#if age >= 18:
+#  print("You are an adult")
+#  print("You can vote")
+#  print("You have full legal rights")
+
+#is_logged_in = True
+#if is_logged_in:
+#  print("Welcome back!")
+
+#a = 33
+#b = 33 
+#if b > a:
+#  print("b is greater than a")
+#elif a == b:
+#  print("a and b are equal")
+
+#score = 75
+
+#if score >= 90:
+#  print("Grade: A")
+#elif score >= 80:
+#  print("Grade: B")
+#elif score >= 70:
+#  print("Grade: C")
+#elif score >= 60:
+#  print("Grade: D")
+
+#age = 25
+
+#if age < 13:
+#  print("You are a child")
+#elif age < 20:
+#  print("You are a teenager")
+#elif age < 65:
+#  print("You are an adult")
+#elif age >= 65:
+#  print("you are a senior")
+
+day = 3
+
+#if day == 1:
+#  print("Monday")
+#elif day == 2:
+#  print("Tuesday")
+#elif day == 3:
+#  print("Wednesday")
+#elif day == 4:
+#  print("Thursday")
+#elif day == 5:
+#  print("Friday")
+#elif day == 6:
+#  print("Saturday")
+#elif day == 7:
+#  print("Sunday")
+
+#a = 5
+#b = 22
+#if a > b: print("a is greater than b")
+#a = 2
+#b = 0
+
+#print("A") if a > b else print("B")
+
+#a = 1
+#b = 20
+#bigger = a if a > b else b
+#print("Bigger is", bigger)
+
+#a = 330
+#b = 330
+#print("A") if a > b else print("=") if a == b else print("B")
+
+#x = 15
+#y = 20 
+#max_value = x if x > y else y
+#print("Maximum value:", max_value)
+
+#username = ""
+#display_name = username if username else "Guest"
+#print("Welcome,", display_name)
+
+#a = 200
+#b = 33
+#c = 500
+#if a > b and c > a:
+#  print("Both conditions are True")
+
+#a = 200
+#b = 33
+#c = 500
+#if a > b or a > c:
+#  print("At least one of the conditions is Ture")
+
+#a = 33
+#b = 200
+#if not a > b:
+#  print("a is NOT greater than b")
+
+#age = 25
+#is_student = False
+#has_discount_code = True
+
+#if (age < 18 or age > 65) and not is_student or has_discount_code:
+#  print("discount applies!")
+
+#temperature = 25
+#is_raining = False
+#is_weekend = True
+
+#if(temperature > 20 and not is_raining) or is_weekend:
+#  print("Great day for outdoor activities!")
+#username = "Tobias"
+#password = "secret123"
+#is_verified = True
+
+#if username and password and is_verified:
+#  print("login successful")
+#else:
+#  print("login failed")
+
+#score = 85
+
+#if score >= 0 and score <= 100:
+#  print("Valid score")
+#else:
+#  print("Invalid score")
+
+#x = 111
+
+#if x > 10:
+#  print("Above ten,")
+#  if x > 20:
+#    print("and also above 20!")
+#  else:
+#    print("but not above 20.")
+
+#age = 25
+#has_license = True
+
+#if age >= 18:
+#  if has_license:
+#    print("You can drive")
+#  else:
+#    print("You need a license")
+#else:
+#    print("You are too young to drive")
+
+#temperature = 25
+#is_sunny = True
+
+#if temperature > 20:
+#  if is_sunny:
+#    print("Perfect beach weather!")
+
+#temperature = 25
+#is_sunny = True
+#if temperature > 20 and is_sunny:
+#  print("Perfect beach weather!")
+
+#username = "Emil"
+#password = "python123"
+#is_active = True
+
+#if username:
+#  if password:
+#    if is_active:
+#      print("Login successful")
+#    else:
+#      print("Account is not active")
+#  else:
+#      print("Password required")
+#else:
+#  print("Username required")
+
+#score = 22
+#extra_credit = 5
+
+#if score >= 90:
+#  if extra_credit > 0:
+#    print("A+ grade")
+#  else:
+#    print("A grade")
+#elif score >= 80:
+#    print("B grade")
+#else:
+#  print("C grade or below")
+
+#age = 19
+
+#if age < 18:
+#  pass
+#else:
+#  print("Access granted")
+
+#score = 85
+
+#if score > 90:
+#  pass
+#print("Score processed")
+
+#value = 50
+
+#if value < 0:
+#  print("Negative value")
+#elif value == 0:
+#  pass
+#else:
+#  print("Positive value")
+
+#def calculate_discount(price):
+#  pass is a null operator and is a placeholder for future code
+
+#i = 1
+#while i < 6:
+# print(i)
+#  i += 1
+
+#i = 1
+#while i < 6:
+#  print(i)
+#  if i == 3:
+    break
+#  i += 1
 
