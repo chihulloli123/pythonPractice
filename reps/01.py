@@ -929,6 +929,323 @@ day = 3
 #while i < 6:
 #  print(i)
 #  if i == 3:
-    break
+#    break
 #  i += 1
+
+#i = 0
+#while i < 6:
+#  i += 1
+#  if i == 3:
+#    continue
+#  print(i)
+
+#i = 1
+#while i < 6:
+#  print(i)
+#  i += 1
+#else:
+#  print("i is no longer less than 6")
+
+#fruits = ["apple", "banana", "cherry"]
+#for x in fruits:
+#  print(x)
+
+#for x in "banana":
+#  print(x)
+
+#fruits = ["apple", "banana", "cherry"]
+#for x in fruits:
+#  print(x)
+#  if x == "banana":
+#    break
+
+#fruits = ["apple", "banana", "cherry"]
+#for x in fruits:
+#  if x == "banana":
+#    break
+#  print(x)
+
+#fruits = ["apple", "banana", "cherry"]
+#for x in fruits:
+#  if x == "banana":
+#    continue
+#  print(x)
+
+#for x in range(6):
+#  print(x)
+
+#def fizzBuzz(n):
+#  for i in range(1, n + 1):
+#    if i % 3 == 0 and i % 5 == 0:
+#      print("fizzBuzz")
+#   elif i % 3 == 0:
+#      print("fizz")
+#    elif i % 5 == 0:
+#      print("Buzz")
+#    else:
+#      print(i)
+
+#for x in range(1, 6):
+#  print(x)
+
+#for x in range(2, 30, 3):
+#  print(x)
+
+#for x in range(1, 6):
+#  print(x)
+#else:
+#  print("Finally finished!")
+
+#for x in range(6):
+#  if x == 3: break
+#  print(x)
+#else:
+#  print("Finally finished!")
+
+#adj = ["red", "big", "tasty"]
+#fruits = ["apple", "banana", "cherry"]
+
+#for x in adj:
+#  for y in fruits:
+#    print(x, y)
+
+#for x in range(3):
+#  print(x)
+
+#def my_function():
+#  print("Hello from a function")
+
+#my_function()
+
+#def my_function():
+#  print("Hello from a function")
+
+#my_function()
+#my_function()
+#my_function()
+
+#temp1 = 77
+#celsius1 = (temp1 - 32) * 5 / 9
+#print(celsius1)
+
+#temp2 = 95
+#celsius2 = (temp2 - 32) * 5 / 9
+#print(celsius2)
+
+#temp3 = 50
+#celsius3 = (temp3 - 32) * 5 / 9
+#print(celsius3)
+
+#def fahrenheit_to_celsius(fahrenheit):
+#  return (fahrenheit - 32) * 5 / 9
+
+#print(fahrenheit_to_celsius(77))
+#print(fahrenheit_to_celsius(95))
+#print(fahrenheit_to_celsius(50))
+
+#def get_greeting():
+#  return "Hello from a fucntion"
+
+#message = get_greeting()
+#print(message)
+
+#def get_message():
+#  return "Hello from a function"
+
+#print(get_message())
+
+#def my_function():
+#  pass
+
+#def my_function(fname):
+#  print(fname + " Refsnes")
+
+#my_function("Emil")
+#my_function("Tobias")
+#my_function("Linus")
+
+#def my_function(name):
+#  print("Hello", name)
+
+#my_function("Emil")
+
+#def my_function(fname, lname):
+#  print(fname + " " + lname)
+
+#my_function("Amanda", "Perez")
+
+#def my_function(name = "friend"):
+#  print("Hello", name)
+
+#my_function("John")
+#my_function("IceBox")
+#my_function("AP")
+#my_function()
+
+#def my_function(country = "Venezula"):
+#  print("I am watching", country)
+
+#my_function("Russia")
+#my_function("Columbia")
+#my_function()
+#my_function("USA")
+
+#def my_function(animal, name):
+#  print("I have a", animal)
+#  print("My", animal + "'s name is", name)
+
+#my_function(animal = "dog", name = "Maxwell")
+
+#def my_function(animal, name):
+#  print("I have a", animal)
+#  print("My", animal + "'s name is", name)
+
+#my_function(name = "Maxwell", animal = "dog")
+
+#def my_function(animal, name):
+#  print("I have a", animal)
+#  print("My", animal + "'s name is", name)
+
+#my_function("dog", "Paisley")
+
+#def my_function(animal, name):
+#  print("I have a", animal)
+#  print("My", animal + "'s name is", name)
+
+#my_function("Buddy", "dog")
+
+#def my_function(animal, name, age):
+#  print("I have a", age, "year old", animal, "named", name)
+
+#my_function("dog", name = "Paisley", age =3)
+
+#def my_function(fruits):
+#  for fruits in fruits:
+#    print(fruits)
+
+#my_fruits = ["apple", "banana", "cherry"]
+#my_function(my_fruits)
+
+#def my_function(person):
+#  print("Name:", person["name"])
+#  print("Age:", person["age"])
+
+#my_person = {"name": "APG", "age": 35}
+#my_function(my_person)
+
+#def my_function(x, y):
+#  return x + y
+
+#result = my_function(5,3)
+#print(result)
+
+#def my_function():
+#  return["apple", "banana", "cherry"]
+
+#fruits = my_function()
+#print(fruits[0])
+#print(fruits[1])
+#print(fruits[2])
+
+#def my_function():
+#  return(10, 20)
+
+#x, y = my_function()
+#print("x:", x)
+#print("y:", y)
+
+#def my_function(name, /):
+#  print("Hello", name)
+
+#my_function("AP")
+
+#def my_function(name):
+#  print("Hello", name)
+
+#my_function(name = "AP")
+
+#def my_function(*, name):
+#  print("Hello", name)
+
+#my_function(name = "AP")
+
+#def my_function(name):
+#  print("Hello", name)
+
+#my_function("AP")
+
+#def my_function(a, b, /, *, c, d):
+#  return a + b + c + d 
+
+#result = my_function(5, 10, c = 15, d = 20)
+#print(result)
+
+#def my_function(a, b, c):
+#  return a + b + c 
+
+#numbers = [1, 2, 3]
+#result = my_function(*numbers)
+#print(result)
+
+#def my_function(fname, lname):
+#  print("Hello", fname, lname)
+
+#person = {"fname": "Amanda", "lname": "Perez"}
+#my_function(**person)
+
+#def myfunc():
+#  x = 300
+#  print(x)
+
+#myfunc()
+
+#def myfunc():
+#  x = 300
+#  def myinnerfunc():
+#    print(x)
+#  myinnerfunc()
+
+#myfunc()
+
+#x = 300
+
+#def myfunc():
+#  print(x)
+
+#myfunc()
+
+#print(x)
+
+#x = 300
+
+#def myfunc():
+#  x = 200
+#  print(x)
+
+#myfunc()
+
+#print(x)
+
+#def myfunc1():
+#  x = "Jane"
+#  def myfunc2():
+#    nonlocal x
+#    x = "hello"
+#  myfunc2()
+#  return x
+
+#print(myfunc1())
+
+#x = "global"
+
+#def outer():
+#  x = "enclosing"
+#  def inner():
+#    x = "local"
+#    print("Inner:", x)
+#  inner()
+#  print("Outer:", x)
+
+#outer()
+#print("Global:", x)
 
